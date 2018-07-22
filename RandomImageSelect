@@ -1,14 +1,17 @@
 <script language="JavaScript">
 // takes a directory location, generates a random number and appends it to the directory
-  function showImage(){
-      var imgDir = 'photography/'; // image directory
-      var max = 69; // max number of images in directory 
-      for (count = 0; count < 5; count++) {
-        // Runs 5 times, with values of count 0 through 4.
-        var imgNum = Math.floor(Math.random() * 69) + 1; // generates a number between 1 and max each time 
-        document.write('<img src="'+ imgDir + imgNum + 'jpg>"');
-      }
-  }
+
+function showImage(){
+    var imgDir = 'photography/'; // image directory
+    var max = 69; // max number of images in directory
+
+    // Runs 5 times, with values of count 0 through 4.
+    for (count = 0; count < 5; count++) {
+      var imgNum = Math.floor(Math.random() * 69) + 1; // generates a number between 1 and max each time 
+      document.write('<div><a href='+ imgDir + imgNum+'.jpg target="_new"><img src="'+ imgDir + imgNum + '.jpg"></div>');
+
+    }
+}
 </script>
 <div>
   <script language="JavaScript">
